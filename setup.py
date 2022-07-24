@@ -8,11 +8,11 @@ with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
         long_description = "\n" + fh.read()
 
 setup(name='tempmail-lol',
-        version='2.6.0',
+        version='2.7.0',
         description='A Python API for TempMail',
-        author='Alex Torres',
+        author='Pyro Botz',
         author_email='cloudbotsedc@gmail.com',
-        url='https://github.com/tempmail-lol/api-python',
+        url='https://github.com/github-noob-arjun/TEMP-MAIL-API',
         packages=find_packages(),
         install_requires=['requests'],
         keywords=['python', 'video', 'api', 'tempmail'],
