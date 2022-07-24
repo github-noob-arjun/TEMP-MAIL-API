@@ -61,7 +61,7 @@ class TempMail:
         if data["email"] == None:
             return # ["None"]
         else:
-            emails = ""
+            emails = "None"
             for email in data["email"]:
                 emails.append(Email(email["from"], email["to"], email["subject"], email["body"], email["html"], email["date"]))
             return emails
