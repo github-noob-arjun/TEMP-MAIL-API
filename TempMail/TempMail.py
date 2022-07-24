@@ -58,8 +58,10 @@ class TempMail:
 
         #if no emails are found, return an empty list
         #else return a list of email
-        if not data["email"] == None:
-            emails = ""
+        emails = ""
+        if data["email"] == None:
+            return
+        else:
             for email in data["email"]:
                 emails=Email(email["from"], email["to"], email["subject"], email["html"])
             return emails
