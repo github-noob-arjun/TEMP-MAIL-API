@@ -64,12 +64,12 @@ class TempMail:
             #emails = []
             for email in data["email"]:
                 #emails.append(Email(email["from"], email["to"], email["subject"], email["body"], email["html"], email["date"]))
-                Subject=Email(email["subject"])
-                From=Email(email["from"])
-                To=Email(email["to"])
-                Body=Email(email["body"])
-                Html=Email(email["html"])
-                Date=Email(email["date"])
+                From=Email(email["from"]),
+                To=Email(email["to"]),
+                Subject=Email(email["subject"]),
+                Body=Email(email["body"]),
+                Html=Email(email["html"]),
+                Date=Email(email["date"]),
             #return emails
             return Subject, From, To, Body, Html, Date
         
