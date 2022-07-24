@@ -4,14 +4,14 @@ the sender, recipient, subject, body, html and date
 """
 
 class Email:
-    def __init__(self, sender, recipient, subject, body, html, date):
+    def __init__(self, sender, recipient, subject, html):
         #make the propertys immutable using @property
         self._sender = sender
         self._recipient = recipient
         self._subject = subject
-        self._body = body
+       # self._body = body
         self._html = html
-        self._date = date
+       # self._date = date
     
     @property
     def sender(self):
