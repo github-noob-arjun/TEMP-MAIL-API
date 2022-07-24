@@ -61,7 +61,7 @@ class TempMail:
         if data["email"] == None:
             return #["None"]
         else:
-            if email in data:
+            if not data["email"] == None:
                 emails = []
                 for email in data["email"]:
                     emails=Email(email["from"], email["to"], email["subject"], email["html"])
