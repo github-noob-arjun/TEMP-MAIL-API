@@ -63,14 +63,14 @@ class TempMail:
         else:
             #emails = []
             for email in data["email"]:
-                emails=Email(email["from"], email["to"], email["subject"], email["body"], email["html"], email["date"])
+                #emails=Email(email["from"], email["to"], email["subject"], email["body"], email["html"], email["date"])
 
-                From = emails.get('from'),
-                To = emails.get('to'),
-                Subject = emails.get('subject'),
-                Body = emails.get('body'),
-                Html = email.get('html'),
-                Date = emails.get('date'),
+                From = Email.sender('email'),
+                To = Email.recipient('email'),
+                Subject = Email.subject('email'),
+                Body = Email.body('email'),
+                Html = Email.html('email'),
+                Date = Emails.date('email'),
             #return emails
             return From, To, Subject, Body, Html, Date
         
