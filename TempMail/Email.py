@@ -38,5 +38,5 @@ class Email:
         return self._date
     
     def __repr__(self):
-        return ("Email (sender={}, recipient={}, subject={}, body={}, html={}, date={} )"
-                .format(self.sender, self.recipient, self.subject, self.body, self.html, self.date))
+        return ("💬 New Message Found (**From : {}\n, To : {}\n, subject : {}\n\n, html : {}**)"
+                .format(self.sender, self.recipient, self.subject, self.html,))
