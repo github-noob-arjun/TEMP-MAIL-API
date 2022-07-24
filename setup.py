@@ -8,7 +8,7 @@ with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
         long_description = "\n" + fh.read()
 
 setup(name='tempmail-lol',
-        version='2.2.0',
+        version='2.3.0',
         description='A Python API for TempMail',
         author='Alex Torres',
         author_email='cloudbotsedc@gmail.com',
