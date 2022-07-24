@@ -62,12 +62,12 @@ class TempMail:
             return ["None"]
         else:
             #emails = []
-            subject
-            from
-            to
-            body
-            html
-            date
+            subject = []
+            from = []
+            to = []
+            body = []
+            html = []
+            date = []
             for email in data["email"]:
                 #emails.append(Email(email["from"], email["to"], email["subject"], email["body"], email["html"], email["date"]))
                 subject.append(Email(email["subject"]))
