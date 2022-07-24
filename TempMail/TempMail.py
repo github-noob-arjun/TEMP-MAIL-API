@@ -58,12 +58,12 @@ class TempMail:
 
         #if no emails are found, return an empty list
         #else return a list of email
-        emails = ""
         if data["email"] == None:
-            return
+            return ["None"]
         else:
+            emails = []
             for email in data["email"]:
-                emails=Email(email["from"], email["to"], email["subject"], email["html"])
+                emails.append(Email(email["from"], email["to"], email["subject"], email["body"], email["html"], email["date"]))
             return emails
 
 
