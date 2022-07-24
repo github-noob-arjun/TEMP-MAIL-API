@@ -66,6 +66,6 @@ class TempMail:
                 for email in data["email"]:
                     emails=Email(email["from"], email["to"], email["subject"], email["html"])
                 return emails
-             else:
-                 return
+            else:
+                return
             
